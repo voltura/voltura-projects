@@ -54,6 +54,7 @@ export default function Gallery({initial}:{initial:Catalog}){
     return()=>lifecycle.abort();
   },[]);
   const projects=useMemo(()=>selectProjects(catalog.projects,query,sort) as Project[],[catalog,query,sort]);
+  const nextRefreshAt=new Date(Date.parse(catalog.refreshedAt)+6*60*60*1000).toISOString();
   return <div className="site-shell">
     <header className="site-header"><a className="brand" href="/" aria-label="Voltura Projects home"><span className="brand-mark">V<span>▪</span></span><span>voltura<span className="brand-divider">/</span><span className="brand-section">projects</span></span></a><a className="profile-link" href="https://github.com/voltura" target="_blank" rel="noopener noreferrer"><Github size={17}/><span>@voltura</span><ArrowUpRight size={15}/></a></header>
     <main id="main">
@@ -63,6 +64,6 @@ export default function Gallery({initial}:{initial:Catalog}){
       {projects.length?<div className="project-grid">{projects.map((p,i)=><ProjectCard key={p.id} project={p} index={i}/>)}</div>:<Empty className="empty-state"><EmptyHeader><Search size={28}/><EmptyTitle>No projects found</EmptyTitle><EmptyDescription>Try another name, language, or keyword.</EmptyDescription></EmptyHeader><button className="reset-button" onClick={()=>{setQuery('');setSort('updated');}}>Reset search</button></Empty>}
       </section>
     </main>
-    <footer><div className="footer-brand">voltura<span> / Built to be useful.</span></div><p>Updated from GitHub · <time dateTime={catalog.refreshedAt}>{new Date(catalog.refreshedAt).toLocaleString('en-GB',{day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',timeZone:'UTC'})} UTC</time>{catalog.status==='delayed'||catalog.status==='unavailable'?<span className="sync-note">Refresh unavailable · showing saved projects</span>:catalog.refreshing?<span className="sync-note">Checking for updates…</span>:null}</p><a href="https://github.com/voltura" target="_blank" rel="noopener noreferrer">Explore on GitHub <ArrowUpRight size={14}/></a></footer>
+    <footer><div className="footer-brand">voltura<span> / Built to be useful.</span></div><p>Updated from GitHub · <time dateTime={catalog.refreshedAt}>{new Date(catalog.refreshedAt).toLocaleString('en-GB',{day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',timeZone:'UTC'})} UTC</time>{catalog.status==='delayed'||catalog.status==='unavailable'?<span className="sync-note">Refresh unavailable · showing saved projects</span>:catalog.refreshing?<span className="sync-note">Checking for updates…</span>:<span className="next-refresh">Next refresh after <time dateTime={nextRefreshAt}>{new Date(nextRefreshAt).toLocaleString('en-GB',{day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',timeZone:'UTC'})} UTC</time> · starts on a visit</span>}</p><a href="https://github.com/voltura" target="_blank" rel="noopener noreferrer">Explore on GitHub <ArrowUpRight size={14}/></a></footer>
   </div>;
 }
