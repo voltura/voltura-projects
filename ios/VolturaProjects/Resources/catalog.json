@@ -1,0 +1,953 @@
+{
+  "projects": [
+    {
+      "id": 496458150,
+      "name": "BlazorAppWeatherDemo",
+      "title": "BlazorAppWeatherDemo",
+      "description": "",
+      "url": "https://github.com/voltura/BlazorAppWeatherDemo",
+      "homepage": null,
+      "language": "HTML",
+      "topics": [],
+      "stars": 0,
+      "updated": "2024-02-17T12:44:33Z",
+      "created": "2022-05-26T02:42:34Z",
+      "archived": false,
+      "revision": "2024-02-17T12:44:33Z",
+      "images": [],
+      "links": []
+    },
+    {
+      "id": 511029503,
+      "name": "CloseHangingOutlookService",
+      "title": "CloseHangingOutlookService",
+      "description": "Windows Service \"the new .NET way\" sample",
+      "url": "https://github.com/voltura/CloseHangingOutlookService",
+      "homepage": null,
+      "language": "C#",
+      "topics": [],
+      "stars": 0,
+      "updated": "2022-07-06T07:19:45Z",
+      "created": "2022-07-06T07:13:38Z",
+      "archived": false,
+      "revision": "2022-07-06T07:19:45Z",
+      "images": [],
+      "links": []
+    },
+    {
+      "id": 766487947,
+      "name": "custom-new-tab-chrome-extension",
+      "title": "custom new tab chrome extension",
+      "description": "Google Chrome Extension that adds shortcut Ctrl + M to open new tab with custom page. Can be used to bypass corporate GPO's enforcing a specific new tab page in Google Chrome.",
+      "url": "https://github.com/voltura/custom-new-tab-chrome-extension",
+      "homepage": null,
+      "language": "JavaScript",
+      "topics": [
+        "chrome",
+        "css",
+        "extension",
+        "gpo",
+        "html",
+        "javascript",
+        "manifest",
+        "tab"
+      ],
+      "stars": 0,
+      "updated": "2024-03-04T18:50:35Z",
+      "created": "2024-03-03T12:08:11Z",
+      "archived": false,
+      "revision": "2024-03-04T18:50:35Z",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/voltura/custom-new-tab-chrome-extension/master/images/screenshot_1280x800.png",
+          "alt": "custom new tab chrome extension"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 538628221,
+      "name": "DotnetCoreMVC_with_TS",
+      "title": "DotnetCoreMVC with TS",
+      "description": "",
+      "url": "https://github.com/voltura/DotnetCoreMVC_with_TS",
+      "homepage": null,
+      "language": "HTML",
+      "topics": [],
+      "stars": 0,
+      "updated": "2022-09-19T17:51:50Z",
+      "created": "2022-09-19T17:51:44Z",
+      "archived": false,
+      "revision": "2022-09-19T17:51:50Z",
+      "images": [],
+      "links": []
+    },
+    {
+      "id": 551683723,
+      "name": "Earner",
+      "title": "Earner",
+      "description": "Display earnings in real time and log to Excel",
+      "url": "https://github.com/voltura/Earner",
+      "homepage": "https://voltura.github.io/Earner/",
+      "language": "C#",
+      "topics": [
+        "consultant",
+        "csharp",
+        "daily-earnings",
+        "dotnet7",
+        "earnings",
+        "excel",
+        "excel-export",
+        "justforfun",
+        "money",
+        "tasks",
+        "work-log"
+      ],
+      "stars": 2,
+      "updated": "2026-09-14T16:53:20Z",
+      "created": "2022-10-14T22:07:31Z",
+      "archived": false,
+      "revision": "2026-09-14T16:53:20Z",
+      "images": [
+        {
+          "alt": "Earner",
+          "url": "https://user-images.githubusercontent.com/2292809/202736689-efd78552-26d6-4d0d-8d9d-0b9d03fc5ea2.png"
+        },
+        {
+          "alt": "Earner tasks",
+          "url": "https://user-images.githubusercontent.com/2292809/201538923-5d0a1e58-f152-4f19-8f82-154787b9311b.png"
+        },
+        {
+          "alt": "Earner report periods",
+          "url": "https://user-images.githubusercontent.com/2292809/202327007-ec4fa793-a41d-4059-99de-299a4fb62e9d.png"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Product",
+          "url": "https://voltura.github.io/Earner/",
+          "label": "Product"
+        }
+      ]
+    },
+    {
+      "id": 890015643,
+      "name": "fortnox-submitter",
+      "title": "Fortnox Submitter",
+      "description": "Fortnox Submitter is a web application designed for easy submission and management of documents submitted to the Fortnox accounting system.",
+      "url": "https://github.com/voltura/fortnox-submitter",
+      "homepage": "https://voltura.se/fortnox",
+      "language": "PHP",
+      "topics": [
+        "fortnox",
+        "invoice",
+        "receipt",
+        "submit"
+      ],
+      "stars": 1,
+      "updated": "2026-04-26T22:10:36Z",
+      "created": "2024-11-17T19:54:57Z",
+      "archived": false,
+      "revision": "2026-04-26T22:10:36Z",
+      "images": [],
+      "links": [
+        {
+          "kind": "Product",
+          "url": "https://voltura.se/fortnox",
+          "label": "Product"
+        }
+      ]
+    },
+    {
+      "id": 8703221,
+      "name": "HanzApp",
+      "title": "HanzApp",
+      "description": "JavaScript & HTML5 mobile game",
+      "url": "https://github.com/voltura/HanzApp",
+      "homepage": null,
+      "language": null,
+      "topics": [],
+      "stars": 1,
+      "updated": "2013-03-11T15:25:12Z",
+      "created": "2013-03-11T12:45:05Z",
+      "archived": false,
+      "revision": "2013-03-11T15:25:12Z",
+      "images": [],
+      "links": []
+    },
+    {
+      "id": 417298300,
+      "name": "HardTop",
+      "title": "HardTop",
+      "description": "Make any window Always On Top!",
+      "url": "https://github.com/voltura/HardTop",
+      "homepage": "https://voltura.github.io/HardTop",
+      "language": "C#",
+      "topics": [
+        "20kb-app",
+        "always-on-top",
+        "csharp",
+        "dotnet",
+        "freeware",
+        "open-source",
+        "tray-area",
+        "window-always-on-top",
+        "windows-10",
+        "windows-11",
+        "windows-desktop"
+      ],
+      "stars": 2,
+      "updated": "2021-10-21T11:05:08Z",
+      "created": "2021-10-14T22:21:37Z",
+      "archived": false,
+      "revision": "2021-10-21T11:05:08Z",
+      "images": [
+        {
+          "alt": "HardTop",
+          "url": "https://user-images.githubusercontent.com/2292809/138265078-067748ed-5919-48d4-a876-b193265fd76b.png"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Product",
+          "url": "https://voltura.github.io/HardTop",
+          "label": "Product"
+        }
+      ]
+    },
+    {
+      "id": 415455364,
+      "name": "iCloud-Photos-synchronization-status",
+      "title": "iCloud Photos synchronization status",
+      "description": "Batch file that displays iCloud Photos sync progress on Windows 11/10",
+      "url": "https://github.com/voltura/iCloud-Photos-synchronization-status",
+      "homepage": null,
+      "language": "Batchfile",
+      "topics": [],
+      "stars": 2,
+      "updated": "2021-10-10T08:15:44Z",
+      "created": "2021-10-10T01:00:36Z",
+      "archived": false,
+      "revision": "2021-10-10T08:15:44Z",
+      "images": [
+        {
+          "alt": "image",
+          "url": "https://user-images.githubusercontent.com/2292809/136687501-d76f471d-cb9f-4f9f-b0b0-6e9a983f0f7a.png"
+        }
+      ],
+      "links": []
+    },
+    {
+      "id": 151837236,
+      "name": "ImageEnableDisable",
+      "title": "ImageEnableDisable",
+      "description": "Use ToolStripRenderer to create a \"disabled\" version in color of existing image",
+      "url": "https://github.com/voltura/ImageEnableDisable",
+      "homepage": null,
+      "language": "C#",
+      "topics": [],
+      "stars": 0,
+      "updated": "2020-12-30T03:39:02Z",
+      "created": "2018-10-06T12:20:23Z",
+      "archived": false,
+      "revision": "2020-12-30T03:39:02Z",
+      "images": [],
+      "links": []
+    },
+    {
+      "id": 547479399,
+      "name": "json-test-server",
+      "title": "json test server",
+      "description": "",
+      "url": "https://github.com/voltura/json-test-server",
+      "homepage": null,
+      "language": null,
+      "topics": [],
+      "stars": 0,
+      "updated": "2022-10-09T17:04:09Z",
+      "created": "2022-10-07T18:56:16Z",
+      "archived": false,
+      "revision": "2022-10-09T17:04:09Z",
+      "images": [],
+      "links": []
+    },
+    {
+      "id": 358674710,
+      "name": "ListTorrentFiles",
+      "title": "ListTorrentFiles",
+      "description": "",
+      "url": "https://github.com/voltura/ListTorrentFiles",
+      "homepage": null,
+      "language": "C#",
+      "topics": [],
+      "stars": 0,
+      "updated": "2025-03-13T21:49:07Z",
+      "created": "2021-04-16T17:34:54Z",
+      "archived": false,
+      "revision": "2025-03-13T21:49:07Z",
+      "images": [],
+      "links": []
+    },
+    {
+      "id": 449138123,
+      "name": "MakeDirCopy",
+      "title": "MakeDirCopy",
+      "description": "Create separate folders for files in current folder",
+      "url": "https://github.com/voltura/MakeDirCopy",
+      "homepage": null,
+      "language": "C#",
+      "topics": [],
+      "stars": 1,
+      "updated": "2025-07-14T06:57:45Z",
+      "created": "2022-01-18T04:21:23Z",
+      "archived": false,
+      "revision": "2025-07-14T06:57:45Z",
+      "images": [],
+      "links": []
+    },
+    {
+      "id": 698437487,
+      "name": "Monks-numbering-system",
+      "title": "Monks numbering system",
+      "description": "Displays a numbering system used by Cistercian monks in the 13th century",
+      "url": "https://github.com/voltura/Monks-numbering-system",
+      "homepage": null,
+      "language": "C#",
+      "topics": [],
+      "stars": 0,
+      "updated": "2023-10-02T20:50:46Z",
+      "created": "2023-09-29T23:33:55Z",
+      "archived": false,
+      "revision": "2023-10-02T20:50:46Z",
+      "images": [],
+      "links": []
+    },
+    {
+      "id": 975839175,
+      "name": "QuickFolders",
+      "title": "QuickFolders",
+      "description": "Instantly access your five most recent folders from the system tray.",
+      "url": "https://github.com/voltura/QuickFolders",
+      "homepage": "https://voltura.github.io/QuickFolders/",
+      "language": "C#",
+      "topics": [],
+      "stars": 1,
+      "updated": "2025-06-01T09:03:47Z",
+      "created": "2025-05-01T01:55:23Z",
+      "archived": false,
+      "revision": "2025-06-01T09:03:47Z",
+      "images": [
+        {
+          "alt": "QuickFolders v1.0.1.3 Dark Theme",
+          "url": "https://github.com/user-attachments/assets/49b8730f-3553-483c-889b-b23ba3eeec20"
+        },
+        {
+          "alt": "QuickFolders v1.0.1.3 Light Theme",
+          "url": "https://github.com/user-attachments/assets/7af80bb9-ba22-4f7e-8997-6b9015b923a6"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Product",
+          "url": "https://voltura.github.io/QuickFolders/",
+          "label": "Product"
+        }
+      ]
+    },
+    {
+      "id": 637086073,
+      "name": "ResetWindows",
+      "title": "ResetWindows",
+      "description": "Bring windows that are out-of-screen back!",
+      "url": "https://github.com/voltura/ResetWindows",
+      "homepage": null,
+      "language": "C#",
+      "topics": [],
+      "stars": 0,
+      "updated": "2023-05-06T13:24:29Z",
+      "created": "2023-05-06T13:13:34Z",
+      "archived": false,
+      "revision": "2023-05-06T13:24:29Z",
+      "images": [],
+      "links": []
+    },
+    {
+      "id": 354021746,
+      "name": "StartupOrganizer",
+      "title": "StartupOrganizer",
+      "description": "",
+      "url": "https://github.com/voltura/StartupOrganizer",
+      "homepage": null,
+      "language": "C#",
+      "topics": [],
+      "stars": 0,
+      "updated": "2021-04-13T12:57:19Z",
+      "created": "2021-04-02T13:05:51Z",
+      "archived": false,
+      "revision": "2021-04-13T12:57:19Z",
+      "images": [],
+      "links": []
+    },
+    {
+      "id": 169816689,
+      "name": "TextToImage",
+      "title": "TextToImage",
+      "description": "",
+      "url": "https://github.com/voltura/TextToImage",
+      "homepage": null,
+      "language": "C#",
+      "topics": [],
+      "stars": 0,
+      "updated": "2019-02-09T00:49:36Z",
+      "created": "2019-02-09T00:28:28Z",
+      "archived": false,
+      "revision": "2019-02-09T00:49:36Z",
+      "images": [],
+      "links": []
+    },
+    {
+      "id": 321504890,
+      "name": "TilesGame",
+      "title": "TilesGame",
+      "description": "Kids game - learn colors and spelling of the same.",
+      "url": "https://github.com/voltura/TilesGame",
+      "homepage": null,
+      "language": "C#",
+      "topics": [],
+      "stars": 0,
+      "updated": "2021-01-02T10:52:09Z",
+      "created": "2020-12-15T00:04:04Z",
+      "archived": false,
+      "revision": "2021-01-02T10:52:09Z",
+      "images": [],
+      "links": []
+    },
+    {
+      "id": 1311794672,
+      "name": "voltura-ai-watcher",
+      "title": "Voltura AI Watcher",
+      "description": "Minimal cyberpunk Codex activity watcher for Windows.",
+      "url": "https://github.com/voltura/voltura-ai-watcher",
+      "homepage": "https://voltura.github.io/voltura-ai-watcher/",
+      "language": "C#",
+      "topics": [
+        "ai",
+        "codex",
+        "codex-desktop",
+        "codex-pet",
+        "codex-project",
+        "formatted-output",
+        "formatted-text",
+        "formatter",
+        "listener",
+        "listview",
+        "message",
+        "messages",
+        "watchdog",
+        "watcher"
+      ],
+      "stars": 1,
+      "updated": "2026-08-21T23:01:24Z",
+      "created": "2026-07-25T07:59:37Z",
+      "archived": false,
+      "revision": "2026-08-21T23:01:24Z",
+      "images": [
+        {
+          "alt": "Voltura AI Watcher neon logo",
+          "url": "https://raw.githubusercontent.com/voltura/voltura-ai-watcher/main/docs/assets/voltura-ai-watcher.png"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Product",
+          "url": "https://voltura.github.io/voltura-ai-watcher/",
+          "label": "Product"
+        }
+      ]
+    },
+    {
+      "id": 1288606198,
+      "name": "voltura-air",
+      "title": "Voltura Air",
+      "description": "Turn any phone, tablet, or browser into a free Windows 11 remote or webcam — no app or account required.",
+      "url": "https://github.com/voltura/voltura-air",
+      "homepage": "https://voltura.se/air",
+      "language": "C#",
+      "topics": [
+        "kodi-remote",
+        "media-controls",
+        "open-source",
+        "pc-remote",
+        "phone-as-webcam",
+        "presentation-remote",
+        "pwa",
+        "remote-control",
+        "screen-mirroring",
+        "touchpad",
+        "windows-11",
+        "wireless-keyboard",
+        "youtube-remote"
+      ],
+      "stars": 5,
+      "updated": "2026-09-16T00:36:36Z",
+      "created": "2026-07-03T19:15:23Z",
+      "archived": false,
+      "revision": "2026-09-16T00:36:36Z",
+      "images": [
+        {
+          "alt": "Voltura Air Windows host pairing screen",
+          "url": "https://raw.githubusercontent.com/voltura/voltura-air/main/apps/public-site/assets/voltura-air-host.png"
+        },
+        {
+          "alt": "Fictional Windows 11 productivity desktop mirrored by Voltura Air View PC screen on a landscape iPhone",
+          "url": "https://raw.githubusercontent.com/voltura/voltura-air/main/apps/public-site/assets/voltura-air-screen-view.png"
+        },
+        {
+          "alt": "Voltura Air Custom screens editor",
+          "url": "https://raw.githubusercontent.com/voltura/voltura-air/main/apps/public-site/assets/voltura-air-host-custom-screens.png"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Product",
+          "url": "https://voltura.se/air",
+          "label": "Product"
+        },
+        {
+          "kind": "YouTube",
+          "url": "https://www.youtube.com/@voltura-air",
+          "label": "Voltura Air YouTube channel"
+        }
+      ]
+    },
+    {
+      "id": 1307549759,
+      "name": "voltura-download-watcher",
+      "title": "Voltura Download Watcher",
+      "description": "Minimal cyberpunk Downloads activity watcher for Windows.",
+      "url": "https://github.com/voltura/voltura-download-watcher",
+      "homepage": "https://voltura.github.io/voltura-download-watcher/",
+      "language": "C#",
+      "topics": [
+        "copy",
+        "cut",
+        "cyberpunk-ui",
+        "delete",
+        "download",
+        "list",
+        "log",
+        "monitor",
+        "rename",
+        "sort",
+        "tracker",
+        "watcher",
+        "web-downloads"
+      ],
+      "stars": 0,
+      "updated": "2026-08-01T19:25:43Z",
+      "created": "2026-07-21T09:59:03Z",
+      "archived": false,
+      "revision": "2026-08-01T19:25:43Z",
+      "images": [
+        {
+          "alt": "Voltura Download Watcher with fictional capture data",
+          "url": "https://raw.githubusercontent.com/voltura/voltura-download-watcher/main/docs/assets/voltura-download-watcher.png"
+        },
+        {
+          "alt": "Voltura Download Watcher application icon",
+          "url": "https://raw.githubusercontent.com/voltura/voltura-download-watcher/main/assets/branding/voltura-download-watcher-master.png"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Product",
+          "url": "https://voltura.github.io/voltura-download-watcher/",
+          "label": "Product"
+        }
+      ]
+    },
+    {
+      "id": 1369603121,
+      "name": "voltura-earner",
+      "title": "Voltura Earner",
+      "description": "A lightweight Windows app to track your work hours, earnings, and overtime, with saved history and Excel reports.",
+      "url": "https://github.com/voltura/voltura-earner",
+      "homepage": "https://voltura.github.io/voltura-earner/",
+      "language": "C#",
+      "topics": [
+        "earnings",
+        "excel-report",
+        "hours",
+        "realtime",
+        "work-log",
+        "work-logs"
+      ],
+      "stars": 1,
+      "updated": "2026-09-15T08:25:20Z",
+      "created": "2026-09-14T08:49:24Z",
+      "archived": false,
+      "revision": "2026-09-15T08:25:20Z",
+      "images": [
+        {
+          "alt": "Voltura Earner. See your time. Know what it earns.",
+          "url": "https://raw.githubusercontent.com/voltura/voltura-earner/main/docs/images/voltura-earner-channel-banner.jpg"
+        },
+        {
+          "alt": "Voltura Earner blue dollar tile and clock artwork",
+          "url": "https://raw.githubusercontent.com/voltura/voltura-earner/main/docs/images/voltura-earner-channel-profile.jpg"
+        },
+        {
+          "alt": "Voltura Earner showing net earnings, time worked, overtime, and task controls",
+          "url": "https://raw.githubusercontent.com/voltura/voltura-earner/main/docs/images/voltura-earner.png"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Product",
+          "url": "https://voltura.github.io/voltura-earner/",
+          "label": "Product"
+        },
+        {
+          "kind": "YouTube",
+          "url": "https://youtu.be/h_hQxaHeKA0",
+          "label": "YouTube"
+        },
+        {
+          "kind": "YouTube",
+          "url": "https://www.youtube.com/@voltura-earner",
+          "label": "More from Voltura Earner on YouTube"
+        }
+      ]
+    },
+    {
+      "id": 1358903904,
+      "name": "voltura-weeknumber",
+      "title": "Voltura WeekNumber",
+      "description": "Windows system tray application that displays the current week number. ",
+      "url": "https://github.com/voltura/voltura-weeknumber",
+      "homepage": "https://voltura.github.io/voltura-weeknumber/",
+      "language": "C#",
+      "topics": [
+        "tray-app",
+        "tray-application",
+        "tray-icon",
+        "veckonummer",
+        "week",
+        "week-number",
+        "weeknumber",
+        "windows",
+        "windows-11",
+        "wpf",
+        "wpf-application"
+      ],
+      "stars": 1,
+      "updated": "2026-09-14T23:29:33Z",
+      "created": "2026-09-06T07:43:27Z",
+      "archived": false,
+      "revision": "2026-09-14T23:29:33Z",
+      "images": [
+        {
+          "alt": "Voltura WeekNumber showing the current week, date tools, and the Always on top pin",
+          "url": "https://raw.githubusercontent.com/voltura/voltura-weeknumber/master/docs/images/voltura-weeknumber.png"
+        },
+        {
+          "alt": "Compact calendar in dark mode showing December 2026 with week numbers, event dots, Christmas Day selected, and its event details open beside the month",
+          "url": "https://raw.githubusercontent.com/voltura/voltura-weeknumber/master/docs/images/voltura-weeknumber-calendar-event-dark.png"
+        },
+        {
+          "alt": "Calendar tray icon displaying week 53",
+          "url": "https://raw.githubusercontent.com/voltura/voltura-weeknumber/master/docs/images/voltura-weeknumber-tray-icon.png"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Product",
+          "url": "https://voltura.github.io/voltura-weeknumber/",
+          "label": "Product"
+        },
+        {
+          "kind": "YouTube",
+          "url": "https://youtu.be/VJrlVT-3_Gs",
+          "label": "Watch the 2-minute walkthrough"
+        }
+      ]
+    },
+    {
+      "id": 323518706,
+      "name": "VolturaTextClock",
+      "title": "VolturaTextClock",
+      "description": "A Windows application that displays time as text",
+      "url": "https://github.com/voltura/VolturaTextClock",
+      "homepage": null,
+      "language": "C#",
+      "topics": [],
+      "stars": 1,
+      "updated": "2026-09-07T13:12:15Z",
+      "created": "2020-12-22T04:18:14Z",
+      "archived": false,
+      "revision": "2026-09-07T13:12:15Z",
+      "images": [],
+      "links": []
+    },
+    {
+      "id": 92240314,
+      "name": "VolturaTools",
+      "title": "VolturaTools",
+      "description": "Small tools and utilities for Windows environment",
+      "url": "https://github.com/voltura/VolturaTools",
+      "homepage": null,
+      "language": "C#",
+      "topics": [
+        "balloon-tip",
+        "csharp",
+        "disk-management",
+        "disk-space",
+        "diskspace",
+        "email-sender",
+        "framework",
+        "free-disk-space",
+        "microsoft",
+        "monitor",
+        "msi",
+        "notifications",
+        "smtp-settings",
+        "taskbar",
+        "taskbar-icon",
+        "util",
+        "utility",
+        "week-number",
+        "windows",
+        "windows-10"
+      ],
+      "stars": 4,
+      "updated": "2021-10-21T12:12:42Z",
+      "created": "2017-05-24T02:18:36Z",
+      "archived": false,
+      "revision": "2021-10-21T12:12:42Z",
+      "images": [],
+      "links": []
+    },
+    {
+      "id": 497318631,
+      "name": "WeatherAtYou",
+      "title": "WeatherAtYou",
+      "description": "Weather at your location",
+      "url": "https://github.com/voltura/WeatherAtYou",
+      "homepage": null,
+      "language": "C#",
+      "topics": [],
+      "stars": 0,
+      "updated": "2022-06-03T15:11:34Z",
+      "created": "2022-05-28T12:58:41Z",
+      "archived": false,
+      "revision": "2022-06-03T15:11:34Z",
+      "images": [],
+      "links": []
+    },
+    {
+      "id": 489353582,
+      "name": "WeatherZilla",
+      "title": "WeatherZilla",
+      "description": "Weather app for Sweden",
+      "url": "https://github.com/voltura/WeatherZilla",
+      "homepage": "https://weatherzilla.azurewebsites.net",
+      "language": "C#",
+      "topics": [],
+      "stars": 1,
+      "updated": "2026-09-07T12:40:22Z",
+      "created": "2022-05-06T12:53:14Z",
+      "archived": false,
+      "revision": "2026-09-07T12:40:22Z",
+      "images": [],
+      "links": [
+        {
+          "kind": "Product",
+          "url": "https://weatherzilla.azurewebsites.net/",
+          "label": "Product"
+        }
+      ]
+    },
+    {
+      "id": 366461264,
+      "name": "WeekNumber",
+      "title": "WeekNumber",
+      "description": "Windows 11/10 system tray application that displays the current week number. Veckonummer visas i taskbar. New modern version here: https://voltura.github.io/voltura-weeknumber/",
+      "url": "https://github.com/voltura/WeekNumber",
+      "homepage": "https://voltura.github.io/WeekNumber/",
+      "language": "C#",
+      "topics": [
+        "application-icon",
+        "csharp",
+        "dotnet",
+        "freeware",
+        "icon",
+        "opensource",
+        "tray-area",
+        "weeknumber",
+        "windows-taskbar"
+      ],
+      "stars": 33,
+      "updated": "2026-09-10T10:48:35Z",
+      "created": "2021-05-11T17:20:04Z",
+      "archived": false,
+      "revision": "2026-09-10T10:48:35Z",
+      "images": [
+        {
+          "alt": "image",
+          "url": "https://user-images.githubusercontent.com/2292809/120940539-0f071200-c71e-11eb-8b03-8f24b9fb36ad.png"
+        },
+        {
+          "alt": "Custom colors #1",
+          "url": "https://user-images.githubusercontent.com/2292809/118048718-f4d74f80-b37c-11eb-8b36-211250ff25c5.png"
+        },
+        {
+          "alt": "Custom colors #2",
+          "url": "https://user-images.githubusercontent.com/2292809/120920791-e997eb00-c6c0-11eb-889e-9a3e67787033.png"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Product",
+          "url": "https://voltura.github.io/WeekNumber/",
+          "label": "Product"
+        }
+      ]
+    },
+    {
+      "id": 462946501,
+      "name": "WeekNumberLite",
+      "title": "WeekNumberLite",
+      "description": "Displays current week number in task area icon, nothing else",
+      "url": "https://github.com/voltura/WeekNumberLite",
+      "homepage": "https://voltura.github.io/WeekNumberLite/",
+      "language": "C#",
+      "topics": [],
+      "stars": 4,
+      "updated": "2022-05-20T09:32:45Z",
+      "created": "2022-02-23T23:57:35Z",
+      "archived": false,
+      "revision": "2022-05-20T09:32:45Z",
+      "images": [
+        {
+          "alt": "image",
+          "url": "https://user-images.githubusercontent.com/2292809/155431284-c06fc399-597a-43f5-95f3-2a5f5fb90250.png"
+        },
+        {
+          "alt": "image",
+          "url": "https://user-images.githubusercontent.com/2292809/155431247-bc7c45c9-d748-408e-87ab-e2605f0da186.png"
+        },
+        {
+          "alt": "image",
+          "url": "https://user-images.githubusercontent.com/2292809/155431451-35fdb731-c793-4101-91d8-82ed3c1786c6.png"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Product",
+          "url": "https://voltura.github.io/WeekNumberLite/",
+          "label": "Product"
+        }
+      ]
+    },
+    {
+      "id": 494340255,
+      "name": "WeekNumberLite2",
+      "title": "WeekNumberLite2",
+      "description": "Windows 11/10 system tray application that displays the current week number. WeekNumber Lite 2 has been replaced by Voltura WeekNumber. I will no longer develop this old WeekNumber Lite 2 app. There will be no further features or bug fixes here; development continues in Voltura WeekNumber: https://voltura.github.io/voltura-weeknumber/",
+      "url": "https://github.com/voltura/WeekNumberLite2",
+      "homepage": "https://voltura.github.io/WeekNumberLite2/",
+      "language": "C#",
+      "topics": [
+        "freeware",
+        "taskbar",
+        "week-number",
+        "windows"
+      ],
+      "stars": 10,
+      "updated": "2026-09-10T10:47:52Z",
+      "created": "2022-05-20T06:01:38Z",
+      "archived": false,
+      "revision": "2026-09-10T10:47:52Z",
+      "images": [
+        {
+          "alt": "image",
+          "url": "https://user-images.githubusercontent.com/2292809/155431284-c06fc399-597a-43f5-95f3-2a5f5fb90250.png"
+        },
+        {
+          "alt": "image",
+          "url": "https://user-images.githubusercontent.com/2292809/155431247-bc7c45c9-d748-408e-87ab-e2605f0da186.png"
+        },
+        {
+          "alt": "image",
+          "url": "https://user-images.githubusercontent.com/2292809/169479743-3d64a051-a138-44bb-a2e6-e66c0a061032.png"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Product",
+          "url": "https://voltura.github.io/WeekNumberLite2/",
+          "label": "Product"
+        }
+      ]
+    },
+    {
+      "id": 997425184,
+      "name": "WeekNumberLite2Plus",
+      "title": "WeekNumberLite2Plus",
+      "description": "Week number in the system tray. WeekNumberLite2Plus has been replaced by Voltura WeekNumber: https://voltura.github.io/voltura-weeknumber/",
+      "url": "https://github.com/voltura/WeekNumberLite2Plus",
+      "homepage": "https://voltura.github.io/WeekNumberLite2Plus/",
+      "language": "C#",
+      "topics": [
+        "icon",
+        "system-tray",
+        "week",
+        "week-number",
+        "windows-11"
+      ],
+      "stars": 1,
+      "updated": "2026-09-10T10:47:27Z",
+      "created": "2025-06-06T14:00:33Z",
+      "archived": false,
+      "revision": "2026-09-10T10:47:27Z",
+      "images": [
+        {
+          "alt": "WeekNumber Lite 2+ Settings",
+          "url": "https://github.com/user-attachments/assets/70ed7199-7397-46e8-a9c2-f5c1939b78d3"
+        },
+        {
+          "alt": "WeekNumber Lite 2+ Icon and Tooltip",
+          "url": "https://github.com/user-attachments/assets/488701db-57ac-4de5-8314-c117660f4016"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Product",
+          "url": "https://voltura.github.io/WeekNumberLite2Plus/",
+          "label": "Product"
+        }
+      ]
+    },
+    {
+      "id": 151885456,
+      "name": "WindowsFormsExampleUserControl",
+      "title": "WindowsFormsExampleUserControl",
+      "description": "Abstract class that inherits from UserControl is used when creating a UserControl which works with designer",
+      "url": "https://github.com/voltura/WindowsFormsExampleUserControl",
+      "homepage": null,
+      "language": "C#",
+      "topics": [],
+      "stars": 1,
+      "updated": "2018-10-06T22:23:06Z",
+      "created": "2018-10-06T22:04:18Z",
+      "archived": false,
+      "revision": "2018-10-06T22:23:06Z",
+      "images": [],
+      "links": []
+    }
+  ],
+  "refreshedAt": "2026-09-16T09:06:56.943Z",
+  "refreshing": false,
+  "status": "ready",
+  "due": false
+}

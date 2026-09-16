@@ -1,0 +1,26 @@
+name: iOS build
+on:
+  push:
+    paths: ['ios/**', '.github/workflows/ios.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: macos-15
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test catalog logic
+        working-directory: ios
+        run: swift test
+      - name: Build native iPhone and iPad app
+        run: >-
+          xcodebuild -project ios/VolturaProjects.xcodeproj
+          -scheme VolturaProjects -configuration Debug
+          -sdk iphonesimulator -destination 'generic/platform=iOS Simulator'
+          -derivedDataPath build CODE_SIGNING_ALLOWED=NO build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: VolturaProjects-iOS-Simulator
+          path: build/Build/Products/Debug-iphonesimulator/VolturaProjects.app
