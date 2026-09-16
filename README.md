@@ -16,3 +16,9 @@ Use the Sites building and hosting skills for installation, preview, builds, and
 Run `node --test tests/catalog.test.mjs` for parser, sorting, pagination, persistence, locking, and recovery tests. Run `node node_modules/typescript/bin/tsc --noEmit` for type checks.
 
 Regenerate the initial catalog with `node scripts/seed-catalog.mjs` before creating a new deployment seed. Never edit an already-applied migration; generate a new one for schema changes.
+
+## Vercel deployment
+
+The linked Vercel project uses `vercel.json` to run `next build --webpack` and publish `.next`. The default build remains the Sites/Cloudflare build.
+
+Next.js resolves the catalog adapter to `lib/vercel-catalog.ts`. This fetches the public catalog from the existing Sites service without caching, preserving its D1 storage and six-hour visit-triggered refresh queue. Keep the Sites service public and running: Vercel does not host a separate database. If that service is unavailable, the gallery shows its bundled catalog and a refresh-unavailable notice.
