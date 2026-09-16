@@ -24,3 +24,25 @@ jobs:
         with:
           name: VolturaProjects-iOS-Simulator
           path: build/Build/Products/Debug-iphonesimulator/VolturaProjects.app
+      - name: Build unsigned iPhone release for AltStore
+        run: >-
+          xcodebuild -project ios/VolturaProjects.xcodeproj
+          -scheme VolturaProjects -configuration Release
+          -sdk iphoneos -destination 'generic/platform=iOS'
+          -derivedDataPath device-build CODE_SIGNING_ALLOWED=NO build
+      - name: Package and verify device IPA
+        run: |
+          mkdir -p ipa/Payload
+          cp -R device-build/Build/Products/Release-iphoneos/VolturaProjects.app ipa/Payload/
+          /usr/libexec/PlistBuddy -c 'Print :CFBundleSupportedPlatforms:0' ipa/Payload/VolturaProjects.app/Info.plist | grep -x iPhoneOS
+          lipo -archs ipa/Payload/VolturaProjects.app/VolturaProjects | grep -w arm64
+          cd ipa
+          zip -qry VolturaProjects.ipa Payload
+          unzip -t VolturaProjects.ipa
+          shasum -a 256 VolturaProjects.ipa > VolturaProjects.ipa.sha256
+      - uses: actions/upload-artifact@v4
+        with:
+          name: VolturaProjects-AltStore-IPA
+          path: |
+            ipa/VolturaProjects.ipa
+            ipa/VolturaProjects.ipa.sha256
