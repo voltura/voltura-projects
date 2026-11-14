@@ -1101,6 +1101,29 @@
       ]
     },
     {
+      "id": 1457917794,
+      "name": "voltura-xmas",
+      "title": "Voltura Julkalender",
+      "description": "A Swedish Christmas calendar with 24 doors and a different Voltura project behind each one.",
+      "url": "https://github.com/voltura/voltura-xmas",
+      "homepage": "https://x-mas.voltura.se",
+      "language": "JavaScript",
+      "topics": [],
+      "stars": 0,
+      "updated": "2026-11-14T17:45:26Z",
+      "created": "2026-11-14T16:00:43Z",
+      "archived": false,
+      "revision": "2026-11-14T17:45:26Z",
+      "images": [],
+      "links": [
+        {
+          "kind": "Product",
+          "url": "https://x-mas.voltura.se",
+          "label": "Product"
+        }
+      ]
+    },
+    {
       "id": 323518706,
       "name": "VolturaTextClock",
       "title": "Voltura Text Clock",
@@ -1389,5 +1412,5 @@
       "links": []
     }
   ],
-  "refreshedAt": "2026-11-14T14:53:50.218Z"
+  "refreshedAt": "2026-11-14T18:10:32.045Z"
 }

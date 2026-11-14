@@ -4,9 +4,22 @@ import {DatabaseSync} from 'node:sqlite';
 import {readFileSync} from 'node:fs';
 import {extract,classifyLink,listRepositories,selectProjects,baseRecord,safeUrl} from '../lib/catalog.mjs';
 import {readCatalog,refreshBatch,SIX_HOURS} from '../lib/refresh.mjs';
+import {withCatalogArtwork} from '../lib/project-artwork.mjs';
 function repo(id,extras={}){return {id,name:`Project${id}`,owner:{login:'voltura'},fork:false,private:false,html_url:`https://github.com/voltura/Project${id}`,pushed_at:'2026-09-15T00:00:00Z',created_at:'2025-01-01T00:00:00Z',...extras};}
 function database(){const sql=new DatabaseSync(':memory:');sql.exec(readFileSync('drizzle/0000_unknown_nitro.sql','utf8'));const db={prepare(query){let params=[];return {bind(...p){params=p;return this;},async run(){const r=sql.prepare(query).run(...params);return {meta:{changes:Number(r.changes)}};},async first(){return sql.prepare(query).get(...params)||null;}};}};return db;}
 const seed={projects:[baseRecord(repo(1)),baseRecord(repo(2))],refreshedAt:'2020-01-01T00:00:00Z'};
+
+test('curated artwork survives catalog refreshes and keeps repository fallbacks',()=>{
+  const fallback={url:'https://example.com/screenshot.png',alt:'Reader screenshot'};
+  const catalog={...seed,projects:[{name:'VOLTURA-BOOKS',images:[fallback]},{name:'Other',images:[]}]};
+  const decorated=withCatalogArtwork(catalog);
+  const [cover,...rest]=decorated.projects[0].images;
+  assert.equal(new URL(cover.url).pathname,'/project-images/voltura-books.webp');
+  assert.deepEqual(rest,[fallback]);
+  assert.deepEqual(withCatalogArtwork(decorated),decorated);
+  assert.equal(decorated.projects[1],catalog.projects[1]);
+  assert.deepEqual(catalog.projects[0].images,[fallback]);
+});
 test('Markdown and HTML images resolve against document and omit tracking',()=>{const x=extract('![App](../assets/screen.png) <img src="logo.png" alt="Logo"> ![badge](https://img.shields.io/foo) <a href="https://youtube.com/@voltura">Video</a>','https://raw.githubusercontent.com/voltura/demo/main/docs/README.md');assert.equal(x.images.length,2);assert.equal(x.images[0].url,'https://raw.githubusercontent.com/voltura/demo/main/assets/screen.png');assert(x.links.some(l=>classifyLink(l)==='YouTube'));assert.equal(safeUrl('javascript:alert(1)'),null);});
 test('Social and product classification does not promote dependency links',()=>{assert.equal(classifyLink({url:'https://pinterest.com/voltura/project'}),'Pinterest');assert.equal(classifyLink({url:'https://pin.it/abc'}),'Pinterest');assert.equal(classifyLink({url:'https://docs.microsoft.com/a'}),null);assert.equal(classifyLink({url:'https://voltura.se/air'},'https://voltura.se/air'),'Product');});
 test('Repository listing paginates and excludes forks, private, and other owners',async()=>{let calls=0;const result=await listRepositories(async()=>++calls===1?Array.from({length:100},(_,i)=>repo(i,{fork:i===1,private:i===2})): [repo(101),repo(102,{owner:{login:'other'}})]);assert.equal(calls,2);assert.equal(result.length,99);assert(!result.some(r=>r.id===1||r.id===2||r.id===102));});
