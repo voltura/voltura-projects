@@ -946,7 +946,7 @@
       "title": "voltura projects",
       "description": "Searchable gallery of Voltura's original public GitHub repositories, with project imagery and automatic updates.",
       "url": "https://github.com/voltura/voltura-projects",
-      "homepage": "https://voltura-projects.volturaab.chatgpt.site",
+      "homepage": "https://projects.voltura.se/",
       "language": "TypeScript",
       "topics": [],
       "stars": 0,
@@ -963,7 +963,7 @@
       "links": [
         {
           "kind": "Product",
-          "url": "https://voltura-projects.volturaab.chatgpt.site/",
+          "url": "https://projects.voltura.se/",
           "label": "Product"
         }
       ]

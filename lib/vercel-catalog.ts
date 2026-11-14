@@ -1,5 +1,5 @@
 import seed from '@/data/catalog.json';
-import {withCatalogArtwork} from './project-artwork.mjs';
+import {withCatalogPresentation} from './project-artwork.mjs';
 type Catalog = typeof seed & {refreshing?: boolean; status?: string};
 
 // Both hosts share the durable catalog and visit-triggered refresh queue.
@@ -15,8 +15,8 @@ export async function getCatalog() {
     if (!data || !Array.isArray(data.projects) || !Number.isFinite(Date.parse(data.refreshedAt))) {
       throw new Error('Invalid catalog response');
     }
-    return withCatalogArtwork(data);
+    return withCatalogPresentation(data);
   } catch {
-    return withCatalogArtwork({...seed, refreshing: false, status: 'unavailable'});
+    return withCatalogPresentation({...seed, refreshing: false, status: 'unavailable'});
   }
 }

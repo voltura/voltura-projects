@@ -4,21 +4,31 @@ import {DatabaseSync} from 'node:sqlite';
 import {readFileSync} from 'node:fs';
 import {extract,classifyLink,listRepositories,selectProjects,baseRecord,safeUrl} from '../lib/catalog.mjs';
 import {readCatalog,refreshBatch,SIX_HOURS} from '../lib/refresh.mjs';
-import {withCatalogArtwork} from '../lib/project-artwork.mjs';
+import {withCatalogPresentation} from '../lib/project-artwork.mjs';
 function repo(id,extras={}){return {id,name:`Project${id}`,owner:{login:'voltura'},fork:false,private:false,html_url:`https://github.com/voltura/Project${id}`,pushed_at:'2026-09-15T00:00:00Z',created_at:'2025-01-01T00:00:00Z',...extras};}
 function database(){const sql=new DatabaseSync(':memory:');sql.exec(readFileSync('drizzle/0000_unknown_nitro.sql','utf8'));const db={prepare(query){let params=[];return {bind(...p){params=p;return this;},async run(){const r=sql.prepare(query).run(...params);return {meta:{changes:Number(r.changes)}};},async first(){return sql.prepare(query).get(...params)||null;}};}};return db;}
 const seed={projects:[baseRecord(repo(1)),baseRecord(repo(2))],refreshedAt:'2020-01-01T00:00:00Z'};
 
 test('curated artwork survives catalog refreshes and keeps repository fallbacks',()=>{
   const fallback={url:'https://example.com/screenshot.png',alt:'Reader screenshot'};
-  const catalog={...seed,projects:[{name:'VOLTURA-BOOKS',images:[fallback]},{name:'Other',images:[]}]};
-  const decorated=withCatalogArtwork(catalog);
+  const catalog={...seed,projects:[{name:'VOLTURA-BOOKS',images:[fallback],links:[]},{name:'Other',images:[],links:[]}]};
+  const decorated=withCatalogPresentation(catalog);
   const [cover,...rest]=decorated.projects[0].images;
   assert.equal(new URL(cover.url).pathname,'/project-images/voltura-books.webp');
   assert.deepEqual(rest,[fallback]);
-  assert.deepEqual(withCatalogArtwork(decorated),decorated);
+  assert.deepEqual(withCatalogPresentation(decorated),decorated);
   assert.equal(decorated.projects[1],catalog.projects[1]);
   assert.deepEqual(catalog.projects[0].images,[fallback]);
+});
+test('the gallery uses its custom domain even when the cached catalog predates it', () => {
+  const previous = 'https://voltura-projects.volturaab.chatgpt.site';
+  const homepage = 'https://projects.voltura.se/';
+  const productLink = { kind: 'Product', label: 'Product', url: previous + '/' };
+  const sourceLink = { kind: 'Source', label: 'Source', url: 'https://github.com/voltura/voltura-projects' };
+  const project = { name: 'voltura-projects', homepage: previous, links: [productLink, sourceLink], images: [] };
+  const catalog = withCatalogPresentation({ ...seed, projects: [project] });
+  assert.deepEqual(catalog.projects[0], { ...project, homepage, links: [{ ...productLink, url: homepage }, sourceLink] });
+  assert.deepEqual(withCatalogPresentation(catalog), catalog);
 });
 test('Markdown and HTML images resolve against document and omit tracking',()=>{const x=extract('![App](../assets/screen.png) <img src="logo.png" alt="Logo"> ![badge](https://img.shields.io/foo) <a href="https://youtube.com/@voltura">Video</a>','https://raw.githubusercontent.com/voltura/demo/main/docs/README.md');assert.equal(x.images.length,2);assert.equal(x.images[0].url,'https://raw.githubusercontent.com/voltura/demo/main/assets/screen.png');assert(x.links.some(l=>classifyLink(l)==='YouTube'));assert.equal(safeUrl('javascript:alert(1)'),null);});
 test('Social and product classification does not promote dependency links',()=>{assert.equal(classifyLink({url:'https://pinterest.com/voltura/project'}),'Pinterest');assert.equal(classifyLink({url:'https://pin.it/abc'}),'Pinterest');assert.equal(classifyLink({url:'https://docs.microsoft.com/a'}),null);assert.equal(classifyLink({url:'https://voltura.se/air'},'https://voltura.se/air'),'Product');});
