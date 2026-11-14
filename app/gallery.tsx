@@ -5,6 +5,7 @@ import {Search,ArrowUpRight,Code2 as Github,Star,ArrowDownWideNarrow,Code2,Play 
 import {Select,SelectTrigger,SelectValue,SelectContent,SelectItem} from '@/components/ui/select';
 import {Empty,EmptyHeader,EmptyTitle,EmptyDescription} from '@/components/ui/empty';
 import {selectProjects} from '@/lib/catalog.mjs';
+import {currentProjects} from '@/lib/current-projects';
 import type seed from '@/data/catalog.json';
 type Project=typeof seed.projects[number];
 const sorts=[['updated','Recently updated'],['name','Name A–Z'],['stars','Most stars'],['created','Newest created']];
@@ -22,7 +23,7 @@ function ProjectCard({project:p,index}:{project:Project,index:number}){
       <div className="project-heading"><h2>{title}</h2><span className="stars" aria-label={`${p.stars} stars`}><Star size={14}/>{p.stars}</span></div>
       <p className="description">{p.description||'Explore the source code on GitHub.'}</p>
       <div className="project-meta"><span>{p.language||'Repository'}</span><span>Updated {new Date(p.updated).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'})}</span></div>
-      <div className="project-links"><a href={p.url} target="_blank" rel="noopener noreferrer"><Github size={15}/>GitHub<ArrowUpRight size={13}/></a>{p.links.map((l,i)=><a key={l.url} className={l.kind==='Product'?'product-link':''} href={l.url} target="_blank" rel="noopener noreferrer" title={l.label} aria-label={`${title}: ${l.label||l.kind}`}>
+      <div className="project-links"><a href={p.url} target="_blank" rel="noopener noreferrer">{p.id<0?<Globe size={15}/>:<Github size={15}/>} {p.id<0?'Open app':'GitHub'}<ArrowUpRight size={13}/></a>{p.links.map((l,i)=><a key={l.url} className={l.kind==='Product'?'product-link':''} href={l.url} target="_blank" rel="noopener noreferrer" title={l.label} aria-label={`${title}: ${l.label||l.kind}`}>
         {l.kind==='YouTube'?<Youtube size={15}/>:l.kind==='Pinterest'?<span className="pinterest-icon">P</span>:<Globe size={15}/>}{l.kind}{p.links.filter(x=>x.kind===l.kind).length>1?` ${p.links.slice(0,i+1).filter(x=>x.kind===l.kind).length}`:''}<ArrowUpRight size={13}/>
       </a>)}</div>
     </div>
@@ -31,6 +32,7 @@ function ProjectCard({project:p,index}:{project:Project,index:number}){
 type Catalog=typeof seed & {refreshing?:boolean,status?:string};
 export default function Gallery({initial}:{initial:Catalog}){
   const [catalog,setCatalog]=useState(initial),[query,setQuery]=useState(''),[sort,setSort]=useState('updated');
+  const [showAll,setShowAll]=useState(false);
   const catalogRef=useRef(catalog);catalogRef.current=catalog;
   useEffect(()=>{
     const controller=new AbortController();let timer:ReturnType<typeof setTimeout>;
@@ -47,20 +49,24 @@ export default function Gallery({initial}:{initial:Catalog}){
       const args=input as {query?:unknown,sort?:unknown};
       if(Object.keys(args).some(k=>!['query','sort'].includes(k))||(args.query!==undefined&&typeof args.query!=='string')||(args.sort!==undefined&&!sorts.some(s=>s[0]===args.sort)))throw new Error('Invalid search or sort');
       const q=(args.query??'') as string,s=(args.sort??'updated') as string;
-      flushSync(()=>{setQuery(q);setSort(s);});
+      flushSync(()=>{setShowAll(true);setQuery(q);setSort(s);});
       const found=selectProjects(catalogRef.current.projects,q,s) as Project[];
       return {count:found.length,projects:found.map(p=>({name:p.name,description:p.description,github:p.url,links:p.links}))};
     }},{signal:lifecycle.signal})).catch(()=>{});}catch{}
     return()=>lifecycle.abort();
   },[]);
-  const projects=useMemo(()=>selectProjects(catalog.projects,query,sort) as Project[],[catalog,query,sort]);
+  const projects=useMemo(()=>selectProjects(showAll?catalog.projects:currentProjects(catalog.projects),query,sort) as Project[],[catalog,query,sort,showAll]);
   const nextRefreshAt=new Date(Date.parse(catalog.refreshedAt)+6*60*60*1000).toISOString();
   return <div className="site-shell">
     <header className="site-header"><a className="brand" href="/" aria-label="Voltura Projects home"><span className="brand-mark">V<span>▪</span></span><span>voltura<span className="brand-divider">/</span><span className="brand-section">projects</span></span></a><a className="profile-link" href="https://github.com/voltura" target="_blank" rel="noopener noreferrer"><Github size={17}/><span>@voltura</span><ArrowUpRight size={15}/></a></header>
     <main id="main">
       <section className="intro"><div><p className="eyebrow">VOLTURA PROJECTS</p><h1>Small tools.<br className="mobile-break"/> <span>Real possibilities.</span></h1><p className="intro-copy">Apps, experiments, and everyday utilities by Joakim Skoglund.</p></div><div className="collection-count"><strong>{catalog.projects.length}</strong><span>public projects</span></div></section>
       <section className="catalog" aria-label="Repository gallery"><div className="toolbar"><label className="search-box"><Search size={20}/><span className="sr-only">Search projects</span><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Search projects, languages, or ideas…"/>{query&&<button onClick={()=>setQuery('')} aria-label="Clear search"><X size={17}/></button>}</label><div className="sort-control"><ArrowDownWideNarrow size={18}/><Select value={sort} onValueChange={setSort}><SelectTrigger aria-label="Sort projects"><SelectValue/></SelectTrigger><SelectContent>{sorts.map(([value,label])=><SelectItem key={value} value={value}>{label}</SelectItem>)}</SelectContent></Select></div></div>
-      <div className="results-line"><p role="status" aria-live="polite"><strong>{projects.length}</strong> {query?'matching projects':'projects'}<span className="results-separator">/</span>{query?`Search: “${query}”`:'Originals only. Always open.'}</p><span className="collection-label">EXPLORE THE COLLECTION</span></div>
+      <div className="catalog-views" role="group" aria-label="Project collection">
+        <button type="button" aria-pressed={!showAll} onClick={()=>setShowAll(false)}>Current projects</button>
+        <button type="button" aria-pressed={showAll} onClick={()=>setShowAll(true)}>All repositories</button>
+      </div>
+      <div className="results-line"><p role="status" aria-live="polite"><strong>{projects.length}</strong> {query?'matching projects':'projects'}{query&&<><span className="results-separator">/</span>{`Search: “${query}”`}</>}</p></div>
       {projects.length?<div className="project-grid">{projects.map((p,i)=><ProjectCard key={p.id} project={p} index={i}/>)}</div>:<Empty className="empty-state"><EmptyHeader><Search size={28}/><EmptyTitle>No projects found</EmptyTitle><EmptyDescription>Try another name, language, or keyword.</EmptyDescription></EmptyHeader><button className="reset-button" onClick={()=>{setQuery('');setSort('updated');}}>Reset search</button></Empty>}
       </section>
     </main>

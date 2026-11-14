@@ -12,7 +12,7 @@
       "stars": 0,
       "updated": "2024-02-17T12:44:33Z",
       "created": "2022-05-26T02:42:34Z",
-      "archived": false,
+      "archived": true,
       "revision": "2024-02-17T12:44:33Z",
       "images": [],
       "links": []
@@ -29,7 +29,7 @@
       "stars": 0,
       "updated": "2022-07-06T07:19:45Z",
       "created": "2022-07-06T07:13:38Z",
-      "archived": false,
+      "archived": true,
       "revision": "2022-07-06T07:19:45Z",
       "images": [],
       "links": []
@@ -53,10 +53,10 @@
         "tab"
       ],
       "stars": 0,
-      "updated": "2024-03-04T18:50:35Z",
+      "updated": "2026-11-14T05:18:55Z",
       "created": "2024-03-03T12:08:11Z",
       "archived": false,
-      "revision": "2024-03-04T18:50:35Z",
+      "revision": "2026-11-14T05:18:55Z",
       "images": [
         {
           "url": "https://raw.githubusercontent.com/voltura/custom-new-tab-chrome-extension/master/images/screenshot_1280x800.png",
@@ -77,7 +77,7 @@
       "stars": 0,
       "updated": "2022-09-19T17:51:50Z",
       "created": "2022-09-19T17:51:44Z",
-      "archived": false,
+      "archived": true,
       "revision": "2022-09-19T17:51:50Z",
       "images": [],
       "links": []
@@ -86,7 +86,7 @@
       "id": 551683723,
       "name": "Earner",
       "title": "Earner",
-      "description": "Display earnings in real time and log to Excel",
+      "description": "Display earnings in real time and log to Excel. IMPORTANT! Earner has been replaced by Voltura Earner. This old app is no longer maintained and will receive no further features or bug fixes. Development continues in Voltura Earner. https://earner.voltura.se/",
       "url": "https://github.com/voltura/Earner",
       "homepage": "https://voltura.github.io/Earner/",
       "language": "C#",
@@ -104,10 +104,10 @@
         "work-log"
       ],
       "stars": 2,
-      "updated": "2026-09-14T16:53:20Z",
+      "updated": "2026-11-03T11:00:58Z",
       "created": "2022-10-14T22:07:31Z",
-      "archived": false,
-      "revision": "2026-09-14T16:53:20Z",
+      "archived": true,
+      "revision": "2026-11-03T11:00:58Z",
       "images": [
         {
           "alt": "Earner",
@@ -145,10 +145,10 @@
         "submit"
       ],
       "stars": 1,
-      "updated": "2026-04-26T22:10:36Z",
+      "updated": "2026-11-14T05:18:54Z",
       "created": "2024-11-17T19:54:57Z",
       "archived": false,
-      "revision": "2026-04-26T22:10:36Z",
+      "revision": "2026-11-14T05:18:54Z",
       "images": [],
       "links": [
         {
@@ -170,7 +170,7 @@
       "stars": 1,
       "updated": "2013-03-11T15:25:12Z",
       "created": "2013-03-11T12:45:05Z",
-      "archived": false,
+      "archived": true,
       "revision": "2013-03-11T15:25:12Z",
       "images": [],
       "links": []
@@ -199,7 +199,7 @@
       "stars": 2,
       "updated": "2021-10-21T11:05:08Z",
       "created": "2021-10-14T22:21:37Z",
-      "archived": false,
+      "archived": true,
       "revision": "2021-10-21T11:05:08Z",
       "images": [
         {
@@ -225,10 +225,10 @@
       "language": "Batchfile",
       "topics": [],
       "stars": 2,
-      "updated": "2021-10-10T08:15:44Z",
+      "updated": "2026-11-14T05:18:55Z",
       "created": "2021-10-10T01:00:36Z",
       "archived": false,
-      "revision": "2021-10-10T08:15:44Z",
+      "revision": "2026-11-14T05:18:55Z",
       "images": [
         {
           "alt": "image",
@@ -247,10 +247,10 @@
       "language": "C#",
       "topics": [],
       "stars": 0,
-      "updated": "2020-12-30T03:39:02Z",
+      "updated": "2026-11-14T05:18:55Z",
       "created": "2018-10-06T12:20:23Z",
       "archived": false,
-      "revision": "2020-12-30T03:39:02Z",
+      "revision": "2026-11-14T05:18:55Z",
       "images": [],
       "links": []
     },
@@ -266,7 +266,7 @@
       "stars": 0,
       "updated": "2022-10-09T17:04:09Z",
       "created": "2022-10-07T18:56:16Z",
-      "archived": false,
+      "archived": true,
       "revision": "2022-10-09T17:04:09Z",
       "images": [],
       "links": []
@@ -283,7 +283,7 @@
       "stars": 0,
       "updated": "2025-03-13T21:49:07Z",
       "created": "2021-04-16T17:34:54Z",
-      "archived": false,
+      "archived": true,
       "revision": "2025-03-13T21:49:07Z",
       "images": [],
       "links": []
@@ -298,10 +298,10 @@
       "language": "C#",
       "topics": [],
       "stars": 1,
-      "updated": "2025-07-14T06:57:45Z",
+      "updated": "2026-11-14T05:18:54Z",
       "created": "2022-01-18T04:21:23Z",
       "archived": false,
-      "revision": "2025-07-14T06:57:45Z",
+      "revision": "2026-11-14T05:18:54Z",
       "images": [],
       "links": []
     },
@@ -315,10 +315,10 @@
       "language": "C#",
       "topics": [],
       "stars": 0,
-      "updated": "2023-10-02T20:50:46Z",
+      "updated": "2026-11-14T05:18:55Z",
       "created": "2023-09-29T23:33:55Z",
       "archived": false,
-      "revision": "2023-10-02T20:50:46Z",
+      "revision": "2026-11-14T05:18:55Z",
       "images": [],
       "links": []
     },
@@ -364,10 +364,10 @@
       "language": "C#",
       "topics": [],
       "stars": 0,
-      "updated": "2023-05-06T13:24:29Z",
+      "updated": "2026-11-14T05:18:55Z",
       "created": "2023-05-06T13:13:34Z",
       "archived": false,
-      "revision": "2023-05-06T13:24:29Z",
+      "revision": "2026-11-14T05:18:55Z",
       "images": [],
       "links": []
     },
@@ -383,7 +383,7 @@
       "stars": 0,
       "updated": "2021-04-13T12:57:19Z",
       "created": "2021-04-02T13:05:51Z",
-      "archived": false,
+      "archived": true,
       "revision": "2021-04-13T12:57:19Z",
       "images": [],
       "links": []
@@ -398,10 +398,10 @@
       "language": "C#",
       "topics": [],
       "stars": 0,
-      "updated": "2019-02-09T00:49:36Z",
+      "updated": "2026-11-14T05:18:55Z",
       "created": "2019-02-09T00:28:28Z",
       "archived": false,
-      "revision": "2019-02-09T00:49:36Z",
+      "revision": "2026-11-14T05:18:55Z",
       "images": [],
       "links": []
     },
@@ -415,12 +415,48 @@
       "language": "C#",
       "topics": [],
       "stars": 0,
-      "updated": "2021-01-02T10:52:09Z",
+      "updated": "2026-11-14T05:18:55Z",
       "created": "2020-12-15T00:04:04Z",
       "archived": false,
-      "revision": "2021-01-02T10:52:09Z",
+      "revision": "2026-11-14T05:18:55Z",
       "images": [],
       "links": []
+    },
+    {
+      "id": 1444921348,
+      "name": "voltura",
+      "title": "voltura",
+      "description": "Joakim Skoglund — senior fullstack developer and independent consultant at Voltura AB.",
+      "url": "https://github.com/voltura/voltura",
+      "homepage": null,
+      "language": null,
+      "topics": [],
+      "stars": 0,
+      "updated": "2026-11-14T05:18:54Z",
+      "created": "2026-11-03T22:57:49Z",
+      "archived": false,
+      "revision": "2026-11-14T05:18:54Z",
+      "images": [
+        {
+          "alt": "Joakim Skoglund — senior fullstack developer. C# / .NET · React / TypeScript. Voltura AB, Stockholm.",
+          "url": "https://raw.githubusercontent.com/voltura/voltura/main/assets/profile-banner.svg"
+        },
+        {
+          "alt": "Voltura Air Windows application showing connection choices and paired devices",
+          "url": "https://raw.githubusercontent.com/voltura/voltura/main/assets/air.png"
+        },
+        {
+          "alt": "Voltura Music playing Radio Calico in the Retro wood theme, with spectrum visualization, presets, and audio controls",
+          "url": "https://raw.githubusercontent.com/voltura/voltura/main/assets/music.png"
+        }
+      ],
+      "links": [
+        {
+          "kind": "YouTube",
+          "url": "https://youtu.be/zZZpDCErexY",
+          "label": "Video demo"
+        }
+      ]
     },
     {
       "id": 1311794672,
@@ -471,7 +507,7 @@
       "title": "Voltura Air",
       "description": "Turn any phone, tablet, or browser into a free Windows 11 remote or webcam — no app or account required.",
       "url": "https://github.com/voltura/voltura-air",
-      "homepage": "https://voltura.se/air",
+      "homepage": "https://air.voltura.se",
       "language": "C#",
       "topics": [
         "kodi-remote",
@@ -488,11 +524,11 @@
         "wireless-keyboard",
         "youtube-remote"
       ],
-      "stars": 5,
-      "updated": "2026-09-16T00:36:36Z",
+      "stars": 8,
+      "updated": "2026-11-10T21:58:28Z",
       "created": "2026-07-03T19:15:23Z",
       "archived": false,
-      "revision": "2026-09-16T00:36:36Z",
+      "revision": "2026-11-10T21:58:28Z",
       "images": [
         {
           "alt": "Voltura Air Windows host pairing screen",
@@ -510,7 +546,7 @@
       "links": [
         {
           "kind": "Product",
-          "url": "https://voltura.se/air",
+          "url": "https://air.voltura.se/",
           "label": "Product"
         },
         {
@@ -519,6 +555,94 @@
           "label": "Voltura Air YouTube channel"
         }
       ]
+    },
+    {
+      "id": 1435423374,
+      "name": "voltura-archive-codex-chats",
+      "title": "voltura archive codex chats",
+      "description": "Archive local Codex chats and refresh the Windows desktop sidebar, with restore manifests and no Python dependency.",
+      "url": "https://github.com/voltura/voltura-archive-codex-chats",
+      "homepage": null,
+      "language": "PowerShell",
+      "topics": [],
+      "stars": 0,
+      "updated": "2026-11-14T05:18:54Z",
+      "created": "2026-10-27T07:58:04Z",
+      "archived": false,
+      "revision": "2026-11-14T05:18:54Z",
+      "images": [],
+      "links": []
+    },
+    {
+      "id": 1375330329,
+      "name": "voltura-books",
+      "title": "Voltura Books",
+      "description": "A Windows app for browsing, reading, previewing, and sending books and documents to Kindle.",
+      "url": "https://github.com/voltura/voltura-books",
+      "homepage": "https://books.voltura.se",
+      "language": "C++",
+      "topics": [
+        "doc",
+        "documents",
+        "docx",
+        "ebook",
+        "ebook-manager",
+        "epub-files",
+        "html",
+        "htmx",
+        "images",
+        "kindle",
+        "pdf",
+        "rtf",
+        "send-to-kindle",
+        "windows-11",
+        "windows-app",
+        "windows-desktop",
+        "word"
+      ],
+      "stars": 1,
+      "updated": "2026-11-14T05:18:54Z",
+      "created": "2026-09-18T03:40:20Z",
+      "archived": false,
+      "revision": "2026-11-14T05:18:54Z",
+      "images": [
+        {
+          "alt": "Voltura Books",
+          "url": "https://raw.githubusercontent.com/voltura/voltura-books/main/docs/assets/book.svg"
+        },
+        {
+          "alt": "Voltura Books showing a cover and details while sending Alice’s Adventures in Wonderland",
+          "url": "https://raw.githubusercontent.com/voltura/voltura-books/main/docs/assets/sending-native.png"
+        },
+        {
+          "alt": "Browse books in dark mode displaying a Word DOC sample with formatted text and an embedded chart",
+          "url": "https://raw.githubusercontent.com/voltura/voltura-books/main/docs/assets/browse-reader-dark.png"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Product",
+          "url": "https://books.voltura.se/",
+          "label": "Product"
+        }
+      ]
+    },
+    {
+      "id": 1372796190,
+      "name": "voltura-codex-projects-sync",
+      "title": "voltura codex projects sync",
+      "description": "",
+      "url": "https://github.com/voltura/voltura-codex-projects-sync",
+      "homepage": null,
+      "language": "PowerShell",
+      "topics": [],
+      "stars": 0,
+      "updated": "2026-11-14T05:18:55Z",
+      "created": "2026-09-16T09:17:05Z",
+      "archived": false,
+      "revision": "2026-11-14T05:18:55Z",
+      "images": [],
+      "links": []
     },
     {
       "id": 1307549759,
@@ -572,7 +696,7 @@
       "title": "Voltura Earner",
       "description": "A lightweight Windows app to track your work hours, earnings, and overtime, with saved history and Excel reports.",
       "url": "https://github.com/voltura/voltura-earner",
-      "homepage": "https://voltura.github.io/voltura-earner/",
+      "homepage": "https://earner.voltura.se",
       "language": "C#",
       "topics": [
         "earnings",
@@ -583,10 +707,10 @@
         "work-logs"
       ],
       "stars": 1,
-      "updated": "2026-09-15T08:25:20Z",
+      "updated": "2026-11-14T05:18:54Z",
       "created": "2026-09-14T08:49:24Z",
       "archived": false,
-      "revision": "2026-09-15T08:25:20Z",
+      "revision": "2026-11-14T05:18:54Z",
       "images": [
         {
           "alt": "Voltura Earner. See your time. Know what it earns.",
@@ -604,7 +728,7 @@
       "links": [
         {
           "kind": "Product",
-          "url": "https://voltura.github.io/voltura-earner/",
+          "url": "https://earner.voltura.se/",
           "label": "Product"
         },
         {
@@ -620,12 +744,288 @@
       ]
     },
     {
+      "id": 1445419325,
+      "name": "voltura-hardtop",
+      "title": "Voltura HardTop",
+      "description": "Keep the windows you need above the rest. A modern Windows tray companion built with C# and .NET 10.",
+      "url": "https://github.com/voltura/voltura-hardtop",
+      "homepage": "https://hardtop.voltura.se",
+      "language": "C#",
+      "topics": [],
+      "stars": 0,
+      "updated": "2026-11-14T05:18:54Z",
+      "created": "2026-11-04T09:27:17Z",
+      "archived": false,
+      "revision": "2026-11-14T05:18:54Z",
+      "images": [
+        {
+          "alt": "Voltura HardTop window picker",
+          "url": "https://raw.githubusercontent.com/voltura/voltura-hardtop/main/site/assets/app.png"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Product",
+          "url": "https://hardtop.voltura.se/",
+          "label": "Product"
+        },
+        {
+          "kind": "YouTube",
+          "url": "https://www.youtube.com/watch?v=2ecOkoOEgUc",
+          "label": "Watch the demo"
+        }
+      ]
+    },
+    {
+      "id": 1429615615,
+      "name": "voltura-imdb-poster-browser-skin",
+      "title": "IMDb Poster Browser",
+      "description": "Free Chrome extension to explore IMDb actor and director filmographies as posters, with IMDb and Rotten Tomatoes ratings. Also available as a Tampermonkey userscript.",
+      "url": "https://github.com/voltura/voltura-imdb-poster-browser-skin",
+      "homepage": "https://imdb.voltura.se",
+      "language": "JavaScript",
+      "topics": [
+        "chrome-extension",
+        "filmography",
+        "imdb",
+        "imdb-information",
+        "javascript",
+        "movie-discovery",
+        "poster-wall",
+        "posters",
+        "ratings",
+        "tampermonkey-userscript"
+      ],
+      "stars": 0,
+      "updated": "2026-11-14T05:07:45Z",
+      "created": "2026-10-22T10:54:42Z",
+      "archived": false,
+      "revision": "2026-11-14T05:07:45Z",
+      "images": [
+        {
+          "alt": "Alexander Skarsgård’s film posters sorted by Rotten Tomatoes rating, with compact IMDb scores and red Fresh tomato icons.",
+          "url": "https://raw.githubusercontent.com/voltura/voltura-imdb-poster-browser-skin/main/assets/poster-browser.png?v=1.4.2"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Product",
+          "url": "https://imdb.voltura.se/",
+          "label": "Product"
+        },
+        {
+          "kind": "YouTube",
+          "url": "https://www.youtube.com/watch?v=2qSl6gYvuIM",
+          "label": "Watch on YouTube ↗"
+        }
+      ]
+    },
+    {
+      "id": 1421898330,
+      "name": "voltura-markdown",
+      "title": "Voltura Markdown",
+      "description": "Fast, compact, read-only Markdown viewer for Windows. Portable executable and optional installer.",
+      "url": "https://github.com/voltura/voltura-markdown",
+      "homepage": "https://markdown.voltura.se",
+      "language": "C++",
+      "topics": [
+        "cpp",
+        "markdown",
+        "viewer",
+        "windows"
+      ],
+      "stars": 1,
+      "updated": "2026-11-09T10:23:44Z",
+      "created": "2026-10-16T08:56:53Z",
+      "archived": false,
+      "revision": "2026-11-09T10:23:44Z",
+      "images": [
+        {
+          "alt": "Voltura Markdown document and lightning icon",
+          "url": "https://raw.githubusercontent.com/voltura/voltura-markdown/main/assets/icon-master.png"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Product",
+          "url": "https://markdown.voltura.se/",
+          "label": "Product"
+        }
+      ]
+    },
+    {
+      "id": 1435478597,
+      "name": "voltura-neton",
+      "title": "Voltura NetOn",
+      "description": "Windows .NET 10 app to turn network adapters on and off from the desktop or system tray",
+      "url": "https://github.com/voltura/voltura-neton",
+      "homepage": "https://neton.voltura.se",
+      "language": "C#",
+      "topics": [],
+      "stars": 0,
+      "updated": "2026-11-14T05:07:45Z",
+      "created": "2026-10-27T08:54:12Z",
+      "archived": false,
+      "revision": "2026-11-14T05:07:45Z",
+      "images": [
+        {
+          "alt": "An ivory switch glowing green, surrounded by delicate connection lines",
+          "url": "https://raw.githubusercontent.com/voltura/voltura-neton/main/docs/assets/neton-illustration.webp"
+        },
+        {
+          "alt": "Green toggle in the on position",
+          "url": "https://raw.githubusercontent.com/voltura/voltura-neton/main/docs/assets/icon-on.png"
+        },
+        {
+          "alt": "Red toggle in the off position",
+          "url": "https://raw.githubusercontent.com/voltura/voltura-neton/main/docs/assets/icon-off.png"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Product",
+          "url": "https://neton.voltura.se/",
+          "label": "Product"
+        }
+      ]
+    },
+    {
+      "id": 1428340313,
+      "name": "voltura-ord",
+      "title": "Voltura Ord",
+      "description": "Svenskt ordspel för två personer. Spela i webbläsaren på mobil, surfplatta eller dator.",
+      "url": "https://github.com/voltura/voltura-ord",
+      "homepage": "https://voltura.github.io/voltura-ord/",
+      "language": "TypeScript",
+      "topics": [],
+      "stars": 0,
+      "updated": "2026-11-14T05:18:54Z",
+      "created": "2026-10-21T12:16:56Z",
+      "archived": false,
+      "revision": "2026-11-14T05:18:54Z",
+      "images": [],
+      "links": [
+        {
+          "kind": "Product",
+          "url": "https://voltura.github.io/voltura-ord/",
+          "label": "Product"
+        }
+      ]
+    },
+    {
+      "id": 1438384491,
+      "name": "voltura-places",
+      "title": "Voltura Places",
+      "description": "Save a place. Find your way back. An offline-first location library. Freeware · MIT.",
+      "url": "https://github.com/voltura/voltura-places",
+      "homepage": "https://voltura.se/places",
+      "language": "TypeScript",
+      "topics": [],
+      "stars": 0,
+      "updated": "2026-11-14T05:08:07Z",
+      "created": "2026-10-29T12:23:30Z",
+      "archived": false,
+      "revision": "2026-11-14T05:08:07Z",
+      "images": [
+        {
+          "alt": "Current dark Places interface with synthetic example places",
+          "url": "https://raw.githubusercontent.com/voltura/voltura-places/main/site/assets/app-mobile.png"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Product",
+          "url": "https://voltura.se/places",
+          "label": "Product"
+        }
+      ]
+    },
+    {
+      "id": 1372798017,
+      "name": "voltura-projects",
+      "title": "voltura projects",
+      "description": "Searchable gallery of Voltura's original public GitHub repositories, with project imagery and automatic updates.",
+      "url": "https://github.com/voltura/voltura-projects",
+      "homepage": "https://voltura-projects.volturaab.chatgpt.site",
+      "language": "TypeScript",
+      "topics": [],
+      "stars": 0,
+      "updated": "2026-11-14T05:18:55Z",
+      "created": "2026-09-16T09:18:29Z",
+      "archived": false,
+      "revision": "2026-11-14T05:18:55Z",
+      "images": [
+        {
+          "url": "https://raw.githubusercontent.com/voltura/voltura-projects/main/ios/VolturaProjects/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+          "alt": "voltura projects"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Product",
+          "url": "https://voltura-projects.volturaab.chatgpt.site/",
+          "label": "Product"
+        }
+      ]
+    },
+    {
+      "id": 1457292510,
+      "name": "voltura-reels",
+      "title": "Voltura Reel Player",
+      "description": "A desktop Chrome player for Facebook Reels",
+      "url": "https://github.com/voltura/voltura-reels",
+      "homepage": "https://reels.voltura.se/",
+      "language": "JavaScript",
+      "topics": [],
+      "stars": 0,
+      "updated": "2026-11-14T13:56:48Z",
+      "created": "2026-11-14T02:03:46Z",
+      "archived": false,
+      "revision": "2026-11-14T13:56:48Z",
+      "images": [],
+      "links": [
+        {
+          "kind": "Product",
+          "url": "https://reels.voltura.se/",
+          "label": "Product"
+        }
+      ]
+    },
+    {
+      "id": 1456014640,
+      "name": "voltura-vault",
+      "title": "Voltura Vault",
+      "description": "Self-hosted password manager with client-side encryption, Bitwarden import, and encrypted files.",
+      "url": "https://github.com/voltura/voltura-vault",
+      "homepage": "https://voltura-vault.voltura.se/",
+      "language": "TypeScript",
+      "topics": [],
+      "stars": 0,
+      "updated": "2026-11-14T05:07:02Z",
+      "created": "2026-11-13T01:21:46Z",
+      "archived": false,
+      "revision": "2026-11-14T05:07:02Z",
+      "images": [
+        {
+          "alt": "Voltura Vault safe",
+          "url": "https://raw.githubusercontent.com/voltura/voltura-vault/main/assets/vault-safe.png"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Product",
+          "url": "https://voltura-vault.voltura.se/",
+          "label": "Product"
+        }
+      ]
+    },
+    {
       "id": 1358903904,
       "name": "voltura-weeknumber",
       "title": "Voltura WeekNumber",
       "description": "Windows system tray application that displays the current week number. ",
       "url": "https://github.com/voltura/voltura-weeknumber",
-      "homepage": "https://voltura.github.io/voltura-weeknumber/",
+      "homepage": "https://weeknumber.voltura.se",
       "language": "C#",
       "topics": [
         "tray-app",
@@ -640,29 +1040,29 @@
         "wpf",
         "wpf-application"
       ],
-      "stars": 1,
-      "updated": "2026-09-14T23:29:33Z",
+      "stars": 2,
+      "updated": "2026-11-14T05:18:54Z",
       "created": "2026-09-06T07:43:27Z",
       "archived": false,
-      "revision": "2026-09-14T23:29:33Z",
+      "revision": "2026-11-14T05:18:54Z",
       "images": [
         {
           "alt": "Voltura WeekNumber showing the current week, date tools, and the Always on top pin",
-          "url": "https://raw.githubusercontent.com/voltura/voltura-weeknumber/master/docs/images/voltura-weeknumber.png"
+          "url": "https://raw.githubusercontent.com/voltura/voltura-weeknumber/main/docs/images/voltura-weeknumber.png"
         },
         {
           "alt": "Compact calendar in dark mode showing December 2026 with week numbers, event dots, Christmas Day selected, and its event details open beside the month",
-          "url": "https://raw.githubusercontent.com/voltura/voltura-weeknumber/master/docs/images/voltura-weeknumber-calendar-event-dark.png"
+          "url": "https://raw.githubusercontent.com/voltura/voltura-weeknumber/main/docs/images/voltura-weeknumber-calendar-event-dark.png"
         },
         {
           "alt": "Calendar tray icon displaying week 53",
-          "url": "https://raw.githubusercontent.com/voltura/voltura-weeknumber/master/docs/images/voltura-weeknumber-tray-icon.png"
+          "url": "https://raw.githubusercontent.com/voltura/voltura-weeknumber/main/docs/images/voltura-weeknumber-tray-icon.png"
         }
       ],
       "links": [
         {
           "kind": "Product",
-          "url": "https://voltura.github.io/voltura-weeknumber/",
+          "url": "https://weeknumber.voltura.se/",
           "label": "Product"
         },
         {
@@ -673,21 +1073,64 @@
       ]
     },
     {
+      "id": 1433076193,
+      "name": "voltura-worlds",
+      "title": "Voltura Worlds",
+      "description": "Animated worlds for your Windows desktop. Native C++ and Direct3D 12.",
+      "url": "https://github.com/voltura/voltura-worlds",
+      "homepage": "https://worlds.voltura.se/",
+      "language": "C++",
+      "topics": [],
+      "stars": 4,
+      "updated": "2026-11-14T05:08:41Z",
+      "created": "2026-10-25T10:29:47Z",
+      "archived": false,
+      "revision": "2026-11-14T05:08:41Z",
+      "images": [
+        {
+          "alt": "Earth rendered by Voltura Worlds",
+          "url": "https://raw.githubusercontent.com/voltura/voltura-worlds/main/site/assets/earth.jpg"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Product",
+          "url": "https://worlds.voltura.se/",
+          "label": "Product"
+        }
+      ]
+    },
+    {
       "id": 323518706,
       "name": "VolturaTextClock",
-      "title": "VolturaTextClock",
-      "description": "A Windows application that displays time as text",
+      "title": "Voltura Text Clock",
+      "description": "Time, in words. A customizable English and Swedish word clock for Windows.",
       "url": "https://github.com/voltura/VolturaTextClock",
-      "homepage": null,
+      "homepage": "https://textclock.voltura.se/",
       "language": "C#",
       "topics": [],
       "stars": 1,
-      "updated": "2026-09-07T13:12:15Z",
+      "updated": "2026-11-14T05:11:09Z",
       "created": "2020-12-22T04:18:14Z",
       "archived": false,
-      "revision": "2026-09-07T13:12:15Z",
-      "images": [],
-      "links": []
+      "revision": "2026-11-14T05:11:09Z",
+      "images": [
+        {
+          "alt": "Voltura TextClock — an English word clock with illuminated letters",
+          "url": "https://raw.githubusercontent.com/voltura/VolturaTextClock/master/site/assets/clock-english.png"
+        },
+        {
+          "alt": "A warmer TextClock appearance",
+          "url": "https://raw.githubusercontent.com/voltura/VolturaTextClock/master/site/assets/clock-warm.png"
+        }
+      ],
+      "links": [
+        {
+          "kind": "Product",
+          "url": "https://textclock.voltura.se/",
+          "label": "Product"
+        }
+      ]
     },
     {
       "id": 92240314,
@@ -720,10 +1163,10 @@
         "windows-10"
       ],
       "stars": 4,
-      "updated": "2021-10-21T12:12:42Z",
+      "updated": "2026-11-14T05:18:55Z",
       "created": "2017-05-24T02:18:36Z",
       "archived": false,
-      "revision": "2021-10-21T12:12:42Z",
+      "revision": "2026-11-14T05:18:55Z",
       "images": [],
       "links": []
     },
@@ -739,7 +1182,7 @@
       "stars": 0,
       "updated": "2022-06-03T15:11:34Z",
       "created": "2022-05-28T12:58:41Z",
-      "archived": false,
+      "archived": true,
       "revision": "2022-06-03T15:11:34Z",
       "images": [],
       "links": []
@@ -756,7 +1199,7 @@
       "stars": 1,
       "updated": "2026-09-07T12:40:22Z",
       "created": "2022-05-06T12:53:14Z",
-      "archived": false,
+      "archived": true,
       "revision": "2026-09-07T12:40:22Z",
       "images": [],
       "links": [
@@ -786,10 +1229,10 @@
         "weeknumber",
         "windows-taskbar"
       ],
-      "stars": 33,
+      "stars": 35,
       "updated": "2026-09-10T10:48:35Z",
       "created": "2021-05-11T17:20:04Z",
-      "archived": false,
+      "archived": true,
       "revision": "2026-09-10T10:48:35Z",
       "images": [
         {
@@ -822,10 +1265,10 @@
       "homepage": "https://voltura.github.io/WeekNumberLite/",
       "language": "C#",
       "topics": [],
-      "stars": 4,
+      "stars": 5,
       "updated": "2022-05-20T09:32:45Z",
       "created": "2022-02-23T23:57:35Z",
-      "archived": false,
+      "archived": true,
       "revision": "2022-05-20T09:32:45Z",
       "images": [
         {
@@ -866,7 +1309,7 @@
       "stars": 10,
       "updated": "2026-09-10T10:47:52Z",
       "created": "2022-05-20T06:01:38Z",
-      "archived": false,
+      "archived": true,
       "revision": "2026-09-10T10:47:52Z",
       "images": [
         {
@@ -908,7 +1351,7 @@
       "stars": 1,
       "updated": "2026-09-10T10:47:27Z",
       "created": "2025-06-06T14:00:33Z",
-      "archived": false,
+      "archived": true,
       "revision": "2026-09-10T10:47:27Z",
       "images": [
         {
@@ -938,13 +1381,13 @@
       "language": "C#",
       "topics": [],
       "stars": 1,
-      "updated": "2018-10-06T22:23:06Z",
+      "updated": "2026-11-14T05:18:55Z",
       "created": "2018-10-06T22:04:18Z",
       "archived": false,
-      "revision": "2018-10-06T22:23:06Z",
+      "revision": "2026-11-14T05:18:55Z",
       "images": [],
       "links": []
     }
   ],
-  "refreshedAt": "2026-09-16T09:06:56.943Z"
+  "refreshedAt": "2026-11-14T14:53:50.218Z"
 }
